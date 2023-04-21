@@ -8,9 +8,9 @@
 }
 
 .wrapper {
-  padding-top: 60px;
+  padding: 60px 40px 0 40px;
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
 }
 
 body {
