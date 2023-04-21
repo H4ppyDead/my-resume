@@ -122,6 +122,8 @@ body {
     background-color: rgb(57, 57, 57);
     color: white;
   }
+
+ 
   
   h1 {
     font-size: 34px;
@@ -211,3 +213,37 @@ body {
     margin-bottom: 5px;
   }
   
+  @media screen and (max-width: 950px) {
+    body h2, h3, h4, strong, p, li, a, button {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    header {
+      flex-direction: column;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      
+    }
+    @media screen and (max-width: 582px) {
+      body h2, h3, h4, strong, p, li, a, button {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 17px;
+      }
+      header {
+        flex-direction: column;
+      }
+  
+      .social {
+        display: flex;
+        flex-direction: row;
+        
+      }
+    
+  }
