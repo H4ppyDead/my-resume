@@ -7,44 +7,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="wrapper">
   <header>
-    <nav>
-        <ul>
-          <li><a href="#education">Образование</a></li>
-          <li><a href="#experience">Опыт работы</a></li>
-          <li><a href="#skills">Навыки</a></li>
-          <li><a href="#additional">Дополнительная информация</a></li>
-        </ul>
-      </nav>
-          
-    <h1>Токарев Ян Сергеевич</h1>
-    <p>Россия, Москва</p>
-    <p>Telegram: <a href="https://t.me/yantokarev" target="_blank">@yantokarev</a> (предпочитаемый способ связи)</p>
-    <p>Email: <a href="mailto:yan.tokarev@icloud.com">yan.tokarev@icloud.com</a></p>
+    <div class="left-side">
+      <div class="img-container">
+        <img src="./assets/photo.jpg" alt="Me">
+      </div>
+      <div class="right-side">
+      <h1>Токарев Ян</h1>
+      <p>Data Science and Machine Learning</p>
+      <div class="location">
+        <img src="./assets/location.svg" alt="_location">
+        <p>Россия, Москва</p>
+      </div>
+      </div>
+      
+    </div>
+    <div class="social">
+      <div class="social__item">
+        <img src="./assets/telegram.svg" alt="Telegram" class="icon">
+        <a href="https://t.me/yantokarev" target="_blank">@yantokarev</a>
+      </div>
+      <div class="social__item">
+        <img src="./assets/email.svg" alt="Email" class="icon">
+        <a href="mailto:yan.tokarev@icloud.com">yan.tokarev@icloud.com</a>
+      </div>
+      <div class="social__item">
+        <img src="./assets/Github.svg" alt="Github" class="icon">
+        <a href="https://github.com/H4ppyDead" target="_blank">github.com/H4ppyDead</a>
+      </div>
+      <div class="social__item social__item">
+        <img src="./assets/pdf.svg" alt="pdf" class="icon icon--pdf" id="icon">
+        <button id="downloadPDF" class="download__button">Скачать PDF</button>
+      </div>
+    </div>
+    
+    <!-- <nav>
+      <ul>
+        <li><a href="#education">Образование</a></li>
+        <li><a href="#experience">Опыт работы</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#additional">Дополнительная информация</a></li>
+      </ul>
+    </nav> -->
   </header>
   
   <main>
     <section>
-      <h2 id="education">Образование</h2>
-      <p><strong>Российский экономический университет им. Г.В. Плеханова, Москва</strong></p>
-      <p>Прикладная информатика</p>
-      <p>Студент 4 курса (2023)</p>
-      <p>В процессе обучения на 4 курсе РЭУ им. Г. В. Плеханова по направлению Прикладная Информатика в Экономике, активно развивал навыки проектирования баз данных, анализа данных и прогнозирования с использованием методов машинного обучения. Успешно освоил линейную алгебру, теорию вероятности и математическую статистику, что позволяет мне разрабатывать и анализировать математические модели для решения разнообразных задач.</p>
-
-      
-    </section>
-
-    <section>
-        <h2 id="experience">Проекты</h2>
-        <!-- добавить много инфы -->
-      <ul> 
-        <li>Cоставление прогноза для прежприятия пищевой промышленности на 1 год с помощью R</li>
-        <p>Опыт использования Python и библиотек для обучения нейронных сетей. Работал с Django Framework при разработке мобильного приложения, фокусируясь на Back End разработке. Проектировал Telegram-ботов с использованием различных API. </p>
-      </ul>
-    </section>
-
-    <section>
-      <h2 id="skills">Навыки</h2>
+      <h2 id="skills" class="section__header">Навыки</h2>
       <ul>
         <li>Языки программирования: Python, C++, R</li>
         <li>Технологии: Keras, Tensorflow, PyTorch, Django, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn </li>
@@ -56,10 +66,60 @@
     </section>
 
     <section>
-      <h2 id="additional">Дополнительная информация</h2>
+        <h2 id="experience" class="section__header">Проекты</h2>
+        <!-- добавить много инфы -->
+      <ul> 
+        <li>Cоставление прогноза для прежприятия пищевой промышленности на 1 год с помощью R</li>
+        <p>Опыт использования Python и библиотек для обучения нейронных сетей. Работал с Django Framework при разработке мобильного приложения, фокусируясь на Back End разработке. Проектировал Telegram-ботов с использованием различных API. </p>
+      </ul>
+    </section>
+
+    <section>
+      <h2 id="education" class="section__header">Образование</h2>
+      <p><strong>Российский экономический университет им. Г.В. Плеханова, Москва</strong></p>
+      <p>Прикладная информатика</p>
+      <p>Студент 4 курса (2023)</p>
+      <p>В процессе обучения на 4 курсе РЭУ им. Г. В. Плеханова по направлению Прикладная Информатика в Экономике, активно развивал навыки проектирования баз данных, анализа данных и прогнозирования с использованием методов машинного обучения. Успешно освоил линейную алгебру, теорию вероятности и математическую статистику, что позволяет мне разрабатывать и анализировать математические модели для решения разнообразных задач.</p>
+    </section>
+
+    <section>
+      <h2 id="additional" class="section__header">Дополнительная информация</h2>
       <p>Являюсь победителем и приезером олимпиад по техническим дисциплинам.</p>
       <p>В настоящее время активно развиваю свои навыки в области Data Science и машинного обучения. Прохожу курсы профессиональной переподготовки от университета Иннополис по DataSciense и мащинному обучению.</p>
     </section>
 </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+  document.getElementById("downloadPDF").addEventListener("click", function () {
+    const element = document.querySelector(".wrapper");
+    const button = document.getElementById("downloadPDF");
+    const img = document.getElementById("icon");
+    element.style.width = "1000px"
+    button.style.display = "none"
+    img.style.display = "none"
+
+    
+    const option = {
+      filename:     'myfile.pdf',
+      image:        { type: 'jpeg', quality: 1 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'a3', orientation: 'portrait' }
+    }
+
+
+
+    html2pdf()
+      .set(option)
+      .from(element)
+      .save();
+
+      setTimeout(() => {
+        element.style.width = "1440px";
+        button.style.display = "block";
+        img.style.display = "inline-block"
+      },0 )
+  });
+</script>
 </body>
 </html>     
