@@ -229,21 +229,6 @@ body {
       flex-direction: row;
       
     }
-    @media screen and (max-width: 582px) {
-      body h2, h3, h4, strong, p, li, a, button {
-        font-size: 12px;
-      }
-      h1 {
-        font-size: 17px;
-      }
-      header {
-        flex-direction: column;
-      }
   
-      .social {
-        display: flex;
-        flex-direction: row;
-        
-      }
     
   }
